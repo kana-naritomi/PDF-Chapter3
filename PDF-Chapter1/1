@@ -1,0 +1,27 @@
+・"JavaScript データ型"と調べてデータ型を3つ調べてください
+  - 数値型
+    let number1 = 123
+    let number2 = 1.5
+
+  - 文字列型
+    let string = 'おはよう'
+
+    console.log(string.slice(1, 3)) // はよ
+    console.log(string.length)      // 4
+
+  - 真偽型
+    let boolean = true
+
+・変数に値を格納する時の用語は？
+  代入
+
+・ディレクトリとは？
+  フォルダーと同じ意味
+
+・絶対パスとは？
+  ルートディレクトリから目的のフォルダー、またはファイルまでのパスを書いたもの
+  /Users/username/workspace/HTML/style/style.css
+
+・相対パスとは？
+  カレントディレクトリから目的のフォルダー、またはファイルまでのパスを書いたもの
+  ./style/style.css
