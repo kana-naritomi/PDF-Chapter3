@@ -1,0 +1,6 @@
+# margin - 要素の外側の余白
+borderの外側の領域
+
+# padding - 要素の内側の余白
+Contentの外側であり
+borderの内側の領域

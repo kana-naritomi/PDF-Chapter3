@@ -1,0 +1,59 @@
+# ブランチ
+変更の履歴を分岐して記録していくためのもの。
+分岐したブランチは他のブランチの影響を受けないため、
+同じリポジトリの中で複数の変更を同時に進められる。
+
+master - 本番環境
+develop - 開発環境
+feture - 作業環境
+
+作業ごとにブランチを分け、バグ等がなければdevelopと合体させる。
+
+ブランチを切り替えることにより、自分の作業が他の開発者に影響しないため
+予期せぬバグ等を防ぐことができる。
+
+ブランチの一覧を表示
+$ git branch
+ブランチを作成
+$ git branch <branchname>
+
+# プル
+ブランチを切って作業している途中でdevelop環境が更新されることがある。
+その環境を自分の環境へ反映させる時にプルする。自分の新規実装している箇所には影響しない。
+
+$ git pull
+
+# コンフリクト
+develop環境が更新されプルした時に発生するバージョンの衝突。
+複数人が同じ箇所を変更した場合に、どの記述を優先したらいいかわからない状態のこと。
+
+CONFLICT (content): Merge conflict in sample.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+# マージ
+分岐した履歴を戻して統合する手段。
+
+$ git merge
+
+# プルリクエスト
+コードなどを追加・修正した際、本体への反映を他の開発者に依頼する機能。
+
+$ git pull-request
+
+# フォーク
+フォークはユーザが管理するリポジトリのコピー。
+フォークを使えば、オリジナルのリポジトリに影響を与えることなくプロジェクトへの変更を行える。
+
+$ git clone https://github.com/YOUR-USERNAME/Spoon-Knife
+$ git remote -v
+$ git remote add upstream https://github.com/octocat/Spoon-Knife.git
+
+# スタッシュ
+変更を一時退避する処理。まだコミットしたくない修正を一時退避するために使われる。
+
+$ git stash [実行コマンド]
+
+# Diff
+diffは2つの入力データセットを取得してそれらの間の変更を出力する機能。
+
+$ git diff
