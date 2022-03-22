@@ -1,0 +1,58 @@
+.red {
+  width: 400px;
+  height: 100px;
+  background: #ff0000;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.green {
+  width: 150px;
+  height: 250px;
+  background: #00ff51;
+  float: left;
+}
+
+.b {
+  float: left;
+}
+
+.d {
+  float: left;
+}
+
+.magenta {
+  background: #cc00db;
+  width: 150px;
+  height: 50px;
+  
+}
+
+.blue {
+  background: #0093b7;
+  width: 150px;
+  height: 100px;
+}
+
+.orange {
+  background: #ff9e6b;
+  width: 100px;
+  height: 150px;
+  float: left;
+}
+
+.brown {
+  background: #8c2727;
+  width: 250px;
+  height: 100px;
+}
+
+.yellow {
+  background: #fff700;
+  width: 400px;
+  height: 100px;
+}
