@@ -1,0 +1,68 @@
+.red {
+  width: 400px;
+  height: 100px;
+  background: #ff0000;
+  z-index: 10;
+}
+
+.nav {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  height: 60px;
+  background: #ffffff;
+  float: right;
+  z-index: 15;
+  padding-left: 10px;
+}
+
+.purple {
+  width: 40px;
+  height: 40px;
+  background: #a9004b;
+  z-index: 20;
+  margin: 10px 10px 10px 0;
+  display: inline-block;
+  float: left;
+}
+
+.green {
+  width: 150px;
+  height: 250px;
+  background: #00ff51;
+  float: left;
+}
+
+.brown {
+  width: 250px;
+  height: 250px;
+  background: #8c2727;
+  float: left;
+}
+
+.oranges {
+  margin: 40px 0 0 40px;
+  padding: 0;
+}
+
+.orange {
+
+  width: 140px;
+  height: 40px;
+  background: #ff863f;
+  border: solid 5px #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.yellow {
+  width: 400px;
+  height: 100px;
+  background: #fff700;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
