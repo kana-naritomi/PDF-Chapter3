@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>jQueryを使ってみる</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+  </head>
+  <body>
+    <button id="sample">jQuery</button>
+    <script>
+      $(function () {
+        $("#sample").on('click', function () {
+          const result = "ボタンが押されました!";
+          console.log(result);
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 課題 
+Q.
+.click(function () {});
+なぜ上記書き方で書かなかったか。
+
+A.
+click()は古いコードを読むとよく見るが、on()が登場してからclick()メソッドは「.on( "click", handler )」のショートカットとなっている。
+また、on()メソッドと比較すると、複数イベントを定義できないといったデメリットもあるのでon()を使うほうがよい。
+-->
