@@ -1,0 +1,45 @@
+.main {
+  font-size: 20px;
+  &-content {
+  font-size: 14px;
+  }
+ }
+
+
+ $global-value: 50px;
+.main {
+ width: 500px;
+ height: 500px;
+ margin: $global-value;
+ padding: $global-value;
+ background: #333;
+}
+
+.main {
+  $scope-value: 50px;
+  width: 500px;
+  height: 500px;
+  margin: $scope-value;
+  padding: $scope-value;
+  background: #333;
+ }
+ .sub {
+  width: 500px;
+  height: 500px;
+  // margin: $scope-value;
+  // padding: $scope-value;
+  background: #333;
+ }
+
+
+ $parent-name: '.main';
+$img-path: './img/';
+#{$parent-name} {
+ $scope-value: 50px;
+ width: 500px;
+ height: 500px;
+ margin: $scope-value;
+ padding: $scope-value;
+ // 画像は⽤意してないのでコメントアウトしています
+ // background: url(${$img-path}img.png);
+}
